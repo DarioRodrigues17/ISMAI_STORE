@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ISMAI STORE | Sobre</title>
+    <link href="XML_Js.css" rel="stylesheet" />
+    <script src="XML_Js.js" ></script>
+</head>
+
+<body onload="ready()">
+    <p id="action01">Load data</p>
+    <p>Data extracted from a <strong>XML</strong> file</p>
+    <div id="books"></div>
+</body>
+
+<script>
+    function ready() {
+        var pElement = document.getElementById("action01");
+        pElement.style.cursor = "pointer";
+        pElement.onclick = function () {
+            loadData();
+            return false; //to prevent default behaviour;
+        }
+    }
+</script>
+
+</html>
