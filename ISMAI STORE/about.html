@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="shortcut icon" href="./images/ismailogo.png" type="image/x-icon">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+    
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>ISMAI STORE | Sobre</title>
+    <link href="XML_Js.css" rel="stylesheet" />
+    <script src="XML_Js.js" ></script>
+</head>
+
+<body onload="ready()">
+
+    <nav class="nav">
+        <div class="navigation container">
+            <div class="logo">
+                
+        <div id="logo">
+            <a href="index.html">
+                <img src="./images/ismailogo.png" width="80" height="80" alt="" />
+            </a>
+        </div>
+            </div>
+
+            <div class="menu">
+                <div class="top-nav">
+                    <div class="logo">
+                        <img src="./images/ismailogo.png" height="75" width="75" alt="">
+                    </div>
+                    <div class="close">
+                        <i class="bx bx-x"></i>
+                    </div>
+                </div>
+
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product.html" class="nav-link">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contactos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="colaboradores.html" class="nav-link">Colaboradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="cart.html" class="cart-icon">
+                <i class="bx bx-shopping-bag"></i>
+            </a>
+
+            <div class="hamburger">
+                <i class="bx bx-menu"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section all-products" id="products">
+        <div class="top container">
+            <h1>Sobre</h1>
+        </div>
+        <div class="top container"><div class="bg-contact2">
+                    <div class="container-contact2">
+                        <div class="wrap-contact2">
+                            <form class="contact2-form validate-form">
+
+                                <p>Dê nos a sua opinião</p>
+                                <div class="wrap-input2 validate-input" data-validate = "Mensagem necessária">
+                                    <textarea class="input2" name="message"></textarea>
+                                    <span class="focus-input2" data-placeholder="MESSAGE"></span>
+                                </div>
+            
+                                <div class="container-contact2-form-btn">
+                                    <div class="wrap-contact2-form-btn">
+                                        <div class="contact2-form-bgbtn"></div>
+                                        <button class="contact2-form-btn" onclick="myFunction()">
+                                            Submeter
+                                        </button>
+                                <script>
+                                function myFunction() {
+                                alert("Obrigado pela sua Colaboração!");
+                                }
+                                </script>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <section class="section">
+            <div class="fundo-sobre">
+                <div class="testimonial-center container">
+                    <div class="testimonial">
+                        <h5 id="action01">Carregar Sobre Nós</h5>
+                        <div id="books">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+<footer id="footer" class="section footer">
+    <div class="container">
+            <div class="footer-center">
+              <h3 class="white" >CONTACTOS</h3>
+                <h3 class="white" >
+                    Instituto Universitario da Maia - ISMAI <br>
+                    Maia, Portugal <br>
+                    ismai_store@gmail.com
+                </h3>
+            </div>
+    </div>
+</footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="./js/index.js"></script>             
+
+        <script>
+            function ready() {
+                var pElement = document.getElementById("action01");
+                pElement.style.cursor = "pointer";
+                pElement.onclick = function () {
+                    loadData();
+                    return false;
+                }
+            }
+        </script>
+    </body>  
+</html>
